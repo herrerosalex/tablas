@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <meta name="author" content="Alex Godoy">
+    <meta name="description" content="Indice de la pagina">
+    <link rel="icon" type="image/jpeg" href="descarga.jpeg"/>
+</head>
+<body>
+    <h1>Ejercicio 1 - Tablas</h1>
+    <h2>atributo scope</h2>
+
+    <table border="1">
+        <tr>
+        <th scope="row">&nbsp;</th>
+        <th scope="row">Lunes</th>
+        <th scope="row">Martes</th>
+        <th scope="row">Miércoles</th>
+        <th scope="row">Jueves</th>
+        <th scope="row">Viernes</th>
+        </tr>
+        <tr>
+        <th scope="col">10:30</th>
+        <td>Matemáticas</td>
+        <td>Geografía</td>
+        <td>Física</td>
+        <td>Dibujo</td>
+        <td rowspan=2>Matemáticas</td>
+        </tr>
+        <tr>
+        <th scope="col">11:30</th>
+        <td>Inglés</td>
+        <td>Lenguaje</td>
+        <td>Geografía</td>
+        <td>Química</td>
+        </tr>
+       </table>
+
+       <br>
+
+       <h1>Ejercicio 2 - Tablas</h1>
+       <h2>fusionando filas y columnas</h2>
+
+       <table border="1" style="border:1px solid#000;width:100%;">
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            
+           <td colspan="2">&nbsp;</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td colspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            
+            <td rowspan=3>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="3">&nbsp;</td>
+            
+          </tr>
+          <tr>
+            <td colspan="3">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+
+      <h1>Ejercicio 3 - Gastos mensuales</h1>
+
+      <table border="1" style="border:1px solid#000;width:100%;">
+        <caption >Gastos mensuales</caption>
+
+        <thead>
+          <th>Producto</th>
+          <th>Unidades</th>
+          <th>Precio</th>
+          <th>Total</th>
+        </thead>
+
+        <tbody>
+          <tr>
+          <th>Camisetas</th>
+          <td>10</td>
+          <td>2</td>
+          <td>20</td>
+        </tr>
+
+        <tr>
+          <th>Pantalones</th>
+          <td>3</td>
+          <td>14</td>
+          <td>42</td>
+        </tr>
+
+        <tr>
+          <th>Chaquetas</th>
+          <td>4</td>
+          <td>20</td>
+          <td>80</td>
+        </tr>
+        
+        <tr>
+          <th colspan="2">Año 2014</th>
+          <th>Total</th>
+          <td>142</td>
+        </tr>
+
+        </tbody>
+
+      </table>
+
+      <br>
+      <h1>Ejercicio 3 - Tablas</h1>
+      <h2>Tabla con colorines</h2>
+      
+      <table border="1" style="border:1px solid#000;width:100%;">
+        <caption>Horario laboral semanal</caption>
+        <thead>
+           <th colspan="6" style="background-color:yellow" >Dias laborables de la semana</th> 
+           
+        </thead>
+
+        <style>
+            thead, tfoot, tr, caption{
+              text-align: center;
+            }
+          </style>
+
+        <tbody>
+            <tr>
+                <td style="background-color: orange;"></td>
+                <th scope="row" style="background-color: #848404;">Lunes</th>
+                <th scope="row" style="background-color: #848404;">Martes</th>
+                <th scope="row" style="background-color: #04fcfc;">Miércoles</th>
+                <th scope="row" style="background-color: gray;">Jueves</th>
+                <th scope="row" style="background-color: gray;">Viernes</th>
+              </tr>
+
+            <tr>
+                <th rowspan="4" style="background-color: orange;">Mes de octubre</th>
+                <td style="background-color: #848404;">8,30</td>
+                <td rowspan="3" style="background-color: #848404;">9,00</td>
+                <td style="background-color: #04fcfc;">8,45</td>
+                <td style="background-color: gray;">10,00</td>
+                <td style="background-color: gray;">9,45</td>
+                
+            </tr>
+
+            <tr>
+                <td style="background-color: #848404;">9,00</td>
+                <td rowspan="2" style="background-color: #04fcfc;">9,00</td>
+                <td style="background-color: gray;">10,15</td>
+                <td style="background-color: gray;">10,15</td>
+            </tr>
+
+            <tr>
+                <td style="background-color: #848404;">9,30</td>
+                <td rowspan="2" colspan="2" style="background-color: gray;">10,30</td>
+            </tr>
+
+            <tr>
+                <td style="background-color: #848404;">10,00</td>
+                <td style="background-color: #848404;">9,30</td>
+                <td style="background-color: #04fcfc;">9,15</td>
+            </tr>
+
+            <tr>
+                <td style="background-color: orange;"></td>
+                <th scope="row" style="background-color: #848404;">Lunes</th>
+                <th scope="row" style="background-color: #848404;">Martes</th>
+                <th scope="row" style="background-color: #04fcfc;">Miércoles</th>
+                <th scope="row" style="background-color: gray;">Jueves</th>
+                <th scope="row" style="background-color: gray;">Viernes</th>
+              </tr>
+        </tbody>  
+        
+        <tfoot>
+            <tr>
+                <th colspan="6" style="background-color: yellow;">Días laborables de la semana</th>
+            </tr>
+        </tfoot>
+      </table>
+
+
+</body>
+</html>
