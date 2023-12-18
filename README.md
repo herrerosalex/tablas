@@ -1,2 +1,2 @@
 # tablas
-tablas de alex 
+Ejercicios de tablas
